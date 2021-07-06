@@ -31,5 +31,5 @@ Open new powershell in admin mode from the root of this project. And run below s
 - Open Windows Command Prompt in admin mode 
 - Then run below script to send payload to server
 ```
->curl -d '{"data":"Rupesh how are you"}' -H 'Content-Type: application/json' http://localhost:8000/a
+curl -d '{"data":"Rupesh how are you"}' -H 'Content-Type: application/json' http://localhost:8000/a
 ```
