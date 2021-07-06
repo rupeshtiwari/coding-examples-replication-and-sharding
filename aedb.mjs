@@ -10,7 +10,7 @@ app.use(express.json());
 app.post('/:key', (req, res) => {
     const { key } = req.params;
     const destinationFile = `${DATA_DIR}/${key}`;
-    fs.writeFileSync(destinationFile, req.body);
+    fs.writeFileSync(destinationFile, req.body.data);
     res.send();
 });
 
