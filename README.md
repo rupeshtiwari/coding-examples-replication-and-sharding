@@ -1,5 +1,6 @@
 # Replication And Sharding
 
+Visit this page [here also](http://www.rupeshtiwari.com/coding-examples-replication-and-sharding/) 
 ## Sharding
 
 Splitting up databases in bunch of different databases are known as `SHARDING`.
