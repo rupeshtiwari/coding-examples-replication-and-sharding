@@ -27,9 +27,43 @@ Open new powershell in admin mode from the root of this project. And run below s
 
 ### Running client 
 
-- Install `curl` globally `npm i -g curl`
-- Open Windows Command Prompt in admin mode 
-- Then run below script to send payload to server
+#### Posting Data to Shard running at port 3001
+
+Use fiddler or postman to make Http Post to ` http://localhost:8000/a` address and using below JSON.
+
+```json
+{
+	"data":"Rupesh how are you?"
+}
 ```
-curl -d '{"data":"Rupesh how are you"}' -H 'Content-Type: application/json' http://localhost:8000/a
+
+![](https://i.imgur.com/t5YYmPw.png)
+
+![](https://i.imgur.com/yVlF1Eu.png)
+
+#### Getting Data from Shard running at port 3001
+
+Use fiddler or postman to make Http Get to ` http://localhost:8000/a` address. 
+
+ ![](https://i.imgur.com/gIbcmb5.png)
+
+
+
+ #### Posting Data to Shard running at port 3000
+
+Use fiddler or postman to make Http Post to ` http://localhost:8000/b` address and using below JSON.
+
+```json
+{
+	"data":"Hello data in shard 0?"
+}
 ```
+
+
+![](https://i.imgur.com/YOkAhBF.png)
+
+#### Getting Data from Shard running at port 3000
+
+Use fiddler or postman to make Http Get to ` http://localhost:8000/b` address. 
+
+ ![](https://i.imgur.com/gIbcmb5.png)
